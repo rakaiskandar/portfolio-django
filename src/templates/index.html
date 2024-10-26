@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raka Iskandar {% block title %}{% endblock %}</title>
+    {% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+    {% include 'components/navbar.html' %}
+
+    <header>
+        <img src="{% static 'img/raka.JPG' %}" alt="Raka Iskandar" class="center">
+        <h2>Raka Iskandar <span id="typing-text"></span></h2>
+        <p class="center">
+            📌Bandung, Indonesia 📱+6283820002958 📩<a href="mailto:iskandarraka4@gmail.com">iskandarraka4@gmail.com</a>
+            💼<a href="https://www.linkedin.com/in/raka-iskandar-dinata/">linkedin</a> 💻<a
+                href="https://github.com/rakaiskandar">github</a>
+        </p>
+    </header>
+
+    {% block body %}
+    {% endblock %}
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
